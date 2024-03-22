@@ -1,0 +1,59 @@
+<!-- 
+	- Les cases à cocher : checkbox
+	- Les zones d'options (cases d'options) : radio
+	- Les listes déroulantes : choisir dans une liste	
+ -->
+
+<form action="traitement.php" method="post">
+	<fieldset>
+		<legend>Remplissez ce formulaire.</legend>
+	<p>
+		<label>Prénom</label> : 
+		<!-- ZONE DE SAISIE MONOLIGNE -->
+		<input type="text" name="prenom" autofocus required placeholder="Exemple : Nicolas">
+	</p>
+
+	<!-- ZONE DE SAISIE MULTILIGNE -->
+	<p>
+		<label>Description</label> :<br />
+		<textarea name="description" cols="5"></textarea>
+	</p>
+
+	<!-- LES CASES À COCHER -->
+	<p>
+		<label>Quel est votre plat préféré ?</label><br />
+		<input type="checkbox" name="carbonara" checked>
+			<label for="carbonara">Carbonara</label><br />
+		<input type="checkbox" name="crêpes">
+			<label for="crêpes">Crêpes</label>
+	</p>
+
+	<!-- LES CASES D'OPTIONS -->
+	<p>
+		<label>Quel est votre plat préféré ?</label><br />
+		<input type="radio" name="plat" value="carbonara" checked><label for="carbonara">Carbonara</label><br />
+		<input type="radio" name="plat" value="crêpes">
+		<label for="crêpes">Crêpes</label>
+	</p>
+
+	<!-- LES LISTES DEROULANTES -->
+	<p>
+		<label>Quel est votre plat préféré ?</label><br />
+		<select name="plat">
+			<optgroup label="Plats froids">
+				<option value="huitres">Huitres</option>
+			</optgroup>
+			
+			<optgroup label="Plats chauds">
+				<option value="carbonara">Carbonara</option>
+				<option value="crêpes" selected>Crêpes</option>
+			</optgroup>
+			
+		</select>
+	</p>
+	<p>
+		<input type="submit" value="Envoyer">
+		<input type="reset" value="Réinitialiser">
+	</p>
+	</fieldset>
+</form>

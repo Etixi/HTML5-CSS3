@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="design/default.css">
+
+    <link rel="icon" type="image/png" href="pictures/favicon.png">
+
+    <title>Mon Premier Projet | John Doe</title>
+</head>
+
+<body>
+
+    <!-- ENTETE -->
+    <header>
+        <!-- PRENOM ET NOM -->
+        <h1>John Doe</h1>
+        <!-- SPAN -->
+        <span class="separator"></span>
+        <!-- NOM DU PROJET -->
+        <h2>Mon Premier Portfolio</h2>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Aller à l'accueil">Accueil</a></li>
+            <li><a href="#projets">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="contener">
+        <section>
+            <!--INTRODUCTION-->
+            <h3>Introduction</h3>
+
+            <!-- DESCRIPTION DU PROJET -->
+            <p>Ceci est mon Portfolio Web</p>
+
+            <!-- PROJETS -->
+
+        </section>
+
+        <!-- PRODUCTION -->
+        <section id="picture-project">
+            <h3>Production</h3>
+
+            <!-- image -->
+            <img src="pictures/presentation.png" alt="mon premier portfolio" />
+
+            <!-- Vidéo interne -->
+            <iframe width="80%" height="315" src="https://www.youtube.com/embed/vzGllw18DkA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+
+
+            <!-- Cas multiples 
+			 <audio controls width ="70%">
+					<source src = "pictures/bensound.mp3">
+					Votre navigateur ne peut pas lire cette musique.
+					</video>
+					<source src = "pictures/mark-zuckerberg.mp4">
+					Votre navigateur ne peut pas lire cette musique.
+					</video>
+					<source src = "pictures/mark-zuckerberg.mp4">
+					Votre navigateur ne peut pas lire cette musique.
+			</audio>
+			-->
+
+            <!--
+					--  Video multiple --
+				<video controls width ="70%">
+					<source src = "pictures/mark-zuckerberg.mp4">
+					Votre navigateur ne peut pas lire cette vidéo.
+					</video>
+					<source src = "pictures/mark-zuckerberg.mp4">
+					Votre navigateur ne peut pas lire cette vidéo.
+					</video>
+					<source src = "pictures/mark-zuckerberg.mp4">
+					Votre navigateur ne peut pas lire cette vidéo.
+				</video>
+
+					
+				-->
+
+            <!-- Video en provenance de notre repertoire -->
+            <!-- <video controls ="" loop preload="auto/metadata/none" width ="" autoplay ="" poster ="" src = "pictures/mark-zuckerberg.mp4"></video> -->
+
+
+
+            <!-- Ajout d'une piste  audio : cas simple
+				recapitulatifs des propriétés:
+				- controls: 
+				- preloads: auto, none, metadata
+				- autoplay: joue automatquement vos videos
+				- width, height
+
+				-->
+
+            <audio controls src="pictures/bensound.mp3">
+
+        </section>
+
+
+        <!--CONTACT-->
+        <section>
+            <h3>Contact</h3>
+
+            <div class="contact">
+                <!--DESCRIPTION-->
+                <p>Si vous voulez me contacter, n'hésitez pas à m'envoyer un email à <a
+                        href="mailto:etiennekoa6@gmail.com">etiennekoa6@gmail.com</a></p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <span>2024 &copy; ETIENNE KOA</span>
+    </footer>
+</body>
+
+</html>

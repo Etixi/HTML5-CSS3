@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#conteneur {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 700px;
+		}
+
+		.element {
+			width: 400px;
+			height: 200px;
+		}
+
+		.element:nth-child(1){
+			order: 3;
+			flex: 1;
+		}
+
+		.element:nth-child(2){
+			order: 1;
+			flex: 2;
+		}
+
+		.element:nth-child(3){
+			order: 2;
+			flex: 1;
+		}
+	</style>
+</head>
+<body>
+	<div id="conteneur">
+    	<div class="element" style="background: red">Projet A</div>
+    	<div class="element" style="background: pink">Projet B</div>
+    	<div class="element" style="background: green">Projet C</div>
+	</div>
+</body>
+</html>

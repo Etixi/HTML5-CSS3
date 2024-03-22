@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<!--
+		Dans form il y a la méthode:
+		- GET: où les informations seron requises sous forme d'URL.
+		- POST: transmet toutes les informations que par des méthodes qui sont discrètes. Les variables ne vont pas être transmises via l'URL mais via directement des méthodes de votre navigateur.
+		- Les paramètres passent par l'URL, la méthode POST, les paramètres passe de façon plus discrète.
+
+		Dans input, il y a deux paramètres:
+		- type: "text", "password", url, email, tel, number, range (definit un curseur suivi d'un min et d'un max et step pour le pas), color, date (pour le calendrier), le type search
+		- name: prenom, nom (donner un nom au contenu)
+		- size: longueur des caratères insérés
+		- maxlength: longueur maximale des caractères à insérer.
+		- placeholder: mette un petit texte d'exemple.
+
+		Dans un textarea, il y a 3 paramètres:
+		- name: donner un nom au contenu.
+		- rows: pur mettre le nombre de lignes que l'on veut.
+		- cols: nombre de caractres maximales
+
+	-->
+
+	<!--
+		Ajouter des otpions aux formulaires
+		- Trois types d'élémenst d'options
+		-> Les cases à cocher: checkbox
+		-> Les zones d'options: bouton radio
+		-> Les listes déroulantes: chosisir dans une liste.
+
+
+	-->
+	<form action = "traitement.php" action = "GET">
+		<fieldset>
+			<legend>Remplissez ce formulaire</legend>
+		<p>
+		<!--ZONE DE SAISIE MONOLIGNE-->
+		 Remplissage d'un formulaire : <br />
+		<label>Prénom</label>
+		<input type = "text" name = "prenom" autofocus required placeholder= "Exemple: Etienne"><br/>
+		<label>Mail</label>
+		<input type = "email" name = "address mail" required placeholder =  "mailto: etienne@gmail.com"><br/>
+		<label>Mot de passe</label> 
+		<input type = "password" name = "mot de pass" required placeholder=  "1245">
+		</p>
+
+
+		<!--ZONE DE SAISIE MULTILIGNE-->
+		
+	<p>	
+		<label>Description</label> : <br />	
+		<textarea name = "description" rows = "5" cols = "5"></textarea>
+	</p>
+
+		<!--Les cases à cocher -->
+	<p>
+		<label>Quel est votre plat préféré ?</label><br />
+		<input type = "checkbox" name = "carbonara" checked>
+		<label for = "carbonara"> Carbonara</label><br />
+		<input type = "checkbox" name = "crêpes"><label for = "crêpe"> Crêpes</label>
+
+	</p>
+
+		<!--Les cases d'options -->
+		<p>
+			<label>Quel est votre plat préféré ?</label><br />
+			<input type = "radio" name = "plat" value = "carbonara" checked><label for = "carbonara">Carbonara</label><br />
+			<input type = "radio" name = "plat" value = "crêpes"><label for = "crêpe">Crêpes</label>
+		</p>
+
+		<!--Listes déroulantes 
+		optgroup: pour créer des catégories.
+		-->
+		<p>
+			<label>Quel est votre plat préféré ?</label><br />
+			<select name = "plat">
+				<optgroup label = "Plat froid">
+					<option value = "huîtres">Huîtres</option>
+				</optgroup>
+				<optgroup label = "Plat chaud">
+					<option value = "carbonara">Carbonara</option>
+					<option value = "crêpes" selected>Crêpes</option>
+				</optgroup>
+			</select>
+		</p><br />
+		
+	<!--Le champ pour suggérer des valeurs predefinies
+
+		-->
+		<p>
+		<label for = "Qelle carte bleu avez-vous ?">Quelle carte bleue avez-vous ?</label>
+		<input type = "text" list = "cartes" name = "cards">
+		<datalist id = "cartes">
+			<option value = "Visa Classique">
+			<option value = "MasterCard">
+			<option value = "CA">
+		</datalist> <br />
+		</p>
+		<p>
+			<!-- 1ère option de bouton
+
+			<button type = "submit">Envoyer</button>
+		-->
+		<!--2 ème option -->
+			<input type = "submit" value = "Envoyer">
+			<input type = "reset" value ="Reinitialiser">
+		</p>
+	</fieldset>
+	</form>
+</body>
+</html>

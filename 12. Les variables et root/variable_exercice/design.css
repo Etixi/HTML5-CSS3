@@ -1,0 +1,74 @@
+/* 
+	VARIABLES EN CSS
+	
+	--nomDeLaVariable: VALEUR;
+
+	UTILISER
+
+	var(--nomDeLaVariable);
+ */
+
+/* VARIABLES */
+:root {
+	--couleurPrimaire: #F3B63A;
+}
+
+html {
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ecf0f1;
+	font-family: arial, sans-serif;
+	color: white;
+	font-size: 1em;
+	height: 100%;
+}
+
+/* TOUS LES ELEMENTS (pour le padding) */
+* {
+	box-sizing: border-box;
+}
+
+/* LE PREMIER BLOC VU */
+header {
+	min-height: 100%;
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-position: center;
+	padding-top: 15%;
+}
+
+/* PROPRIETES POUR NOS TITRES */
+h1, h2, h3 {
+	text-align: center;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+/* ON SPECIFIE POUR H1 */
+h1 {
+	font-family: georgia, sans-serif;
+	font-size: 5em;
+	margin: 0;
+}
+
+/* ENFIN ON SPECIFIE POUR H2 */
+h2 {
+	color: var(--couleurPrimaire);
+	font-weight: normal;
+	font-size: 3em;
+	margin: 15px auto 0 auto;
+}
+
+/* NOTRE SECTION EXEMPLE */
+section {
+	background-color: var(--couleurPrimaire);
+	padding: 5px;
+}
+
+span {
+	color: #E74856;
+}

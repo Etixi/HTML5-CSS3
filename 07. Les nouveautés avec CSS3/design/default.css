@@ -1,0 +1,176 @@
+/*   
+    COMMENTAIRES
+
+    - declaration de selecteur : id  et classes
+  
+
+    SELECTEUR {
+        propriété1 : valeur1;
+        propriété2: valeur2;
+    }
+
+    - Lorsqu'on parle d'une classe : on ajoute un point
+    - Lorsqu'on parle d'un Id : il faut mettre un hahstag
+
+    !!! Par convention on utilise un ID une seul fois sur une page
+*/
+
+/* #logo {
+
+  
+}
+
+.bienvenue {
+    color: blue;
+}
+
+section {} */
+
+/* On peut énumérer plusieurs sélecteurs 
+h1 {
+
+}
+
+a {
+
+}
+
+*/
+
+/* On peut chainer les sélecteurs sur une même ligne */
+
+/*
+h1, a {
+    color : red;
+}
+*/
+
+
+
+/* p a {
+    color: red;
+}
+
+a[title*="Accueil"] {
+    color: red;
+} */
+
+/* 
+    TAILLE DE LA POLICE
+
+    -> Une taille absolue
+        -> Ne prend àpas en considération l'utilisateur
+        -> Pixel (px)
+
+    -> Une taille relative
+        -> Prend en considération l'utilisateur
+        -> "words"
+            -> xx-small
+            -> x-small
+            -> small
+            -> meduim
+            -> large
+            -> x-large
+            -> xx-large
+
+        -> "em"
+            -> 1em <=> normal selon l'élément
+        -> "ex"
+            -> 100% <=> légérement normal selon l'élément 
+
+    -> UTILISER UNE POLICE PERSONNALISEE
+        -> La police : https://www.dafont.com/fr/
+        -> Des services propres à cette fonction: google font
+
+    -> COULEUR DE FONT
+        -> couleur hexadecimale
+        -> couleur "words"
+        -> couleur rgb
+
+    -> IMAGE DE FONT
+    -> BORDURES
+        + none          + groove
+        + dotted        + ridge
+        + dashed        + inset
+        + solid         + outset
+        + double 
+
+*/
+
+
+#logo {
+    /* float: left; */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    
+
+    /* border: 1px pink double;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    background:  url('https://cdn.pixabay.com/photo/2023/11/29/17/51/clouds-8420083_640.jpg') no-repeat center center,  url('https://www.hp.com/fr-fr/shop/Html/Merch/Images/c08226099_390x286.jpg') no-repeat;
+    background-image: url('https://cdn.pixabay.com/photo/2023/11/29/17/51/clouds-8420083_640.jpg');
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-position: center center; */
+}
+
+h1 {
+    font-family: 'theblacklist', arial, sans-serif;
+    text-align: center;
+    /*opacity: 0.6;*/
+    /*border : 1px black outset; */
+    border-bottom: 1px black solid;
+    box-shadow: 0px 5px 5px black;
+    text-shadow: 3px 3px 3px silver;
+}
+
+h1:hover {
+    color: red;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    border: 1px black solid;
+    border-radius: 10px  30px;
+ 
+
+}
+
+h3 {
+    /* clear: both; */
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+ul {
+    padding: 0;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+nav {
+    text-align: center;
+}
+
+/* POLICES */
+
+@font-face {
+    font-family: 'theblacklist';
+    src: url('../src/theblacklist.ttf') format('truetype');
+}

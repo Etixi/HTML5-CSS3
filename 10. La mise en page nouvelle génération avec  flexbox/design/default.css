@@ -1,0 +1,376 @@
+/*   
+    COMMENTAIRES
+
+    - declaration de selecteur : id  et classes
+  
+
+    SELECTEUR {
+        propriété1 : valeur1;
+        propriété2: valeur2;
+    }
+
+    - Lorsqu'on parle d'une classe : on ajoute un point
+    - Lorsqu'on parle d'un Id : il faut mettre un hahstag
+
+    !!! Par convention on utilise un ID une seul fois sur une page
+
+    
+    TAILLE DE LA POLICE
+
+    -> Une taille absolue
+        -> Ne prend àpas en considération l'utilisateur
+        -> Pixel (px)
+
+    -> Une taille relative
+        -> Prend en considération l'utilisateur
+        -> "words"
+            -> xx-small
+            -> x-small
+            -> small
+            -> meduim
+            -> large
+            -> x-large
+            -> xx-large
+
+        -> "em"
+            -> 1em <=> normal selon l'élément
+        -> "ex"
+            -> 100% <=> légérement normal selon l'élément 
+
+    -> UTILISER UNE POLICE PERSONNALISEE
+        -> La police : https://www.dafont.com/fr/
+        -> Des services propres à cette fonction: google font
+
+    -> COULEUR DE FONT
+        -> couleur hexadecimale
+        -> couleur "words"
+        -> couleur rgb
+
+    -> IMAGE DE FONT
+    -> BORDURES
+        + none          + groove
+        + dotted        + ridge
+        + dashed        + inset
+        + solid         + outset
+        + double 
+
+    -> Les différents types de balises 
+        -> Les balises inline : <a></a>
+            -> <span></span>
+            
+        -> les balises block : <img />
+            -> <div></div>
+
+    -> Les dimensions
+        -> width: px - %
+        -> min-width
+        -> max-width
+        -> height: px - %
+        -> min-height
+        -> max-height 
+
+
+    -> MARGE
+        -> marge interne
+            -> padding
+
+        -> marge externe
+            -> margin
+
+
+    -> Positionnement
+        -> Positionnement absolu
+            -> à n'importe quel endroit
+
+        -> Positionnement relatif
+            -> décaler l'élément par rapport à sa position
+
+        -> Positionnement fixe
+            -> à un endorit fixe tout le temps
+        
+
+*/
+
+/* #logo {
+
+  
+}
+
+.bienvenue {
+    color: blue;
+}
+
+section {} */
+
+/* On peut énumérer plusieurs sélecteurs 
+h1 {
+
+}
+
+a {
+
+}
+
+*/
+
+/* On peut chainer les sélecteurs sur une même ligne */
+
+/*
+h1, a {
+    color : red;
+}
+*/
+
+
+
+/* p a {
+    color: red;
+}
+
+a[title*="Accueil"] {
+    color: red;
+} */
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+
+    /* border: 1px pink double;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    background:  url('https://cdn.pixabay.com/photo/2023/11/29/17/51/clouds-8420083_640.jpg') no-repeat center center,  url('https://www.hp.com/fr-fr/shop/Html/Merch/Images/c08226099_390x286.jpg') no-repeat;
+    background-image: url('https://cdn.pixabay.com/photo/2023/11/29/17/51/clouds-8420083_640.jpg');
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-position: center center; */
+}
+
+h1 {
+    font-family: 'theblacklist', arial, sans-serif;
+    margin-top: 0;
+    padding-top: 30px;
+    /*text-align: center;
+    opacity: 0.6;
+    border : 1px black outset; *
+    border-bottom: 1px black solid;
+    box-shadow: 0px 5px 5px black;
+    text-shadow: 3px 3px 3px silver;
+    */
+}
+
+header {
+    text-align: center;
+    background: #1D1D1D;
+    color: white;
+    padding-bottom: 30px;
+}
+
+section {
+    text-align: center;
+}
+
+/*
+h1:hover {
+    color: red;
+}
+
+*/
+
+h1:active {
+    color: red;
+}
+
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    width: 400px;
+    margin: auto;
+
+
+    /*
+     height: 35px;
+    overflow: hidden;
+    border: 1px black solid;
+    border-radius: 10px 30px;
+    */
+
+}
+
+h3::before {
+    content: "« ";
+    color: grey;
+}
+
+
+h3::after {
+    content: " »";
+    color: grey;
+}
+
+
+h3 {
+    /* clear: both; */
+    font-size: 1.5em;
+    text-transform: uppercase;
+
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 
+a:visited {
+    color: red;
+}
+
+
+a:focus {
+    color: red;
+}
+*/
+
+ul {
+    padding: 0;
+    display: inline;
+
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 15px;
+}
+
+li:hover {
+
+    font-weight: bold;
+}
+
+/*
+a[title="Contact"] {
+    display: block;
+}
+*/
+
+
+nav {
+    text-align: center;
+    background: white;
+    box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+    padding: 15px;
+
+}
+
+footer {
+    background: #1D1D1D;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* SELECTEUR UNIVERSEL */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ID */
+
+#contact {
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+#logo {
+
+    margin-top: 30px;
+    width: 70px;
+}
+
+
+#projet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+/* CLASSES */
+
+.separator {
+    width: 40px;
+    height: 1px;
+    margin: 15px auto;
+    display: block;
+    background: #999999;
+}
+
+.contener {
+    width: 80%;
+    margin: auto;
+}
+
+.projet {
+    width: 400px;
+    margin: 30px;
+    display: inline-block;
+    background: white;
+    padding-bottom: 15px;
+    border: 0px black solid;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+}
+
+.projet:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.3s;
+}
+
+
+.projet img {
+    min-width: 450px;
+    height: 250px;
+}
+
+.projet span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.projet .date-project {
+    font-size: 0.7em;
+}
+
+.picture {
+    width: 400px;
+    height: 266px;
+    overflow: hidden;
+    margin: 15px;
+    background-color: grey;
+}
+
+.date-project {}
+
+/* POLICES */
+
+@font-face {
+    font-family: 'theblacklist';
+    src: url('../src/theblacklist.ttf') format('truetype');
+}

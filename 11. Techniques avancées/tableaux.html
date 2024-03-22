@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tableaux</title>
+		<style type="text/css">
+			table {
+				border-collapse: collapse; /*ne prend que deux valeurs: separate et collapse*/
+				caption-side: bottom;
+			}
+			td, th {
+				border: 5px black solid;
+				padding: 5px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<!-- TABLEAUX SIMLPLES
+				--tr: table rows, pour spécifier les lignes
+				-- td: pour spécifier les données
+				-- th: pour mettre des titres
+			-->
+			<tr>
+				<th>Prenom</th>
+				<th>Nom</th>
+			</tr>
+			<tr>
+				<td>Pierre</td>
+				<td>Jacques</td>
+			</tr>
+		</table>
+
+		<!--
+
+			TABLEAUX COMPLEXES
+				- thead: entête de notre tableau
+				- tbody: corps de notre tableaux
+				- tfoot: le pieds de notre tableaux
+		-->
+		<br><hr>
+		<table>
+			<thead>
+				<tr>
+					<th>Prenom</th>
+					<th>Profession</th>
+					<th>Celibataire ?</th>
+					<th>En couple ?</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Pierre</td>
+					<td>Jardinier</td>
+					<td>Oui</td>
+					<td>Non</td>
+				</tr>
+				<tr>
+					<td>Martin</td>
+					<td>Developpeur</td>
+					<td>Non</td>
+					<td>Non</td>
+				</tr>
+				<tr>
+					<td>Bertrand</td>
+					<td>Analyste</td>
+					<td colspan = "2">On ne sait pas</td>
+					
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Prenom</th>
+					<th>Profession</th>
+					<th>Celibataire ?</th>
+					<th>En couple ?</th>
+				</tr>
+			</tfoot>
+		</table>
+
+		<!--Inversion des tables-->
+		<br><hr>
+		<table>
+			<caption>Les personnages du jeu</caption>
+			<tr>			
+				<th>Prenom</th>
+				<td>Pierre</td>
+				<td>Martin</td>
+				<td>Bertrand</td>
+			</tr>
+
+			<tr>			
+				<th>Profession</th>
+				<td>Jardinier</td>
+				<td>Developpeur</td>
+				<td>Analyste</td>
+			</tr>
+
+			<tr>			
+				<th>Celibataire?</th>
+				<td>Oui</td>
+				<td>Non</td>
+				<td rowspan="2">On ne sait pas</td>
+			</tr>
+
+			<tr>			
+				<th>En couple ?</th>
+				<td>Non</td>
+				<td>Non</td>
+			</tr>
+
+		</table>
+	</body>
+</html>

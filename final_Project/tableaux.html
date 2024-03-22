@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tableaux</title>
+		<style type="text/css">
+			table {
+				border-collapse: collapse;
+				caption-side: bottom;
+			}
+
+			td, th {
+				border: 1px black solid;
+				padding: 5px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- TABLEAU SIMPLE -->
+
+		<!-- <table>
+			<tr>
+				<th>Prénom</th>
+				<th>Nom</th>
+			</tr>
+			<tr>
+				<td>Pierre</td>
+				<td>Jacques</td>
+			</tr>
+		</table> -->
+
+		<!-- TABLEAU COMPLEXE -->
+
+		<table>
+			
+			<thead>
+				<tr>
+					<th>Prénom</th>
+					<th>Profession</th>
+					<th>Est célibataire ?</th>
+					<th>Est en couple ?</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Pierre</td>
+					<td>Jardinier</td>
+					<td>Oui</td>
+					<td>Non</td>
+				</tr>
+				<tr>
+					<td>Stendhal</td>
+					<td>Ecrivain</td>
+					<td>Non</td>
+					<td>Oui</td>
+				</tr>
+				<tr>
+					<td>Yves</td>
+					<td>Politicien</td>
+					<td colspan="2">On ne sait pas</td>
+				</tr>
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<th>Prénom</th>
+					<th>Profession</th>
+					<th>Est célibataire ?</th>
+					<th>Est en couple ?</th>
+				</tr>
+			</tfoot>
+
+		</table><br />
+
+		<table>
+			<caption>Les personnages du jeu</caption>
+			<tr>
+				<th>Prénom</th>
+				<td>Pierre</td>
+				<td>Stendhal</td>
+				<td>Yves</td>
+			</tr>
+			<tr>
+				<th>Profession</th>
+				<td>Jardinier</td>
+				<td>Ecrivain</td>
+				<td>Politicien</td>
+			</tr>
+			<tr>
+				<th>Est célibataire ?</th>
+				<td>Oui</td>
+				<td>Non</td>
+				<td rowspan="2">On ne sait pas</td>
+			</tr>
+			<tr>
+				<th>Est en couple ?</th>
+				<td>Non</td>
+				<td>Oui</td>
+			</tr>
+		</table>
+	</body>
+</html>
